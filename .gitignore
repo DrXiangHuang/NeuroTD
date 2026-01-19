@@ -1,0 +1,37 @@
+# ======================================================
+# Whitelist-style .gitignore for NeuroTD
+#
+# Policy:
+#   - Ignore everything by default
+#   - Explicitly allow only:
+#       * repository metadata
+#       * Python source files under src/neurotd/
+#       * README figures under src/neurotd/img/
+#
+# This prevents accidental publication of data, results,
+# development artifacts, or experimental files.
+# ======================================================
+
+# Ignore everything by default
+*
+
+# ------------------------------------------------------
+# Allow core repository files
+# ------------------------------------------------------
+!.gitignore
+!README.md
+!pyproject.toml
+!LICENSE.txt
+
+# ------------------------------------------------------
+# Allow NeuroTD source tree
+# ------------------------------------------------------
+!src/
+!src/neurotd/
+!src/neurotd/**/*.py
+
+# ------------------------------------------------------
+# Allow README figures
+# ------------------------------------------------------
+!src/neurotd/img/
+!src/neurotd/img/*.png
