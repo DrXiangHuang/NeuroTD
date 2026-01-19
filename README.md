@@ -30,10 +30,11 @@ conda create -n neurotd python=3.12
 conda activate neurotd
 ```
 
-Install dependencies and the local library with `pip`.
+Install dependencies and the local library with `pip`. NeuroTD uses a modern `pyproject.toml`–based build system, with all runtime dependencies declared directly in `pyproject.toml`.
+From the repository root, install the package with:
 
 ```bash
-pip install -r requirements.txt
+pip install -e .
 ```
 
 This process usually takes several minutes.
