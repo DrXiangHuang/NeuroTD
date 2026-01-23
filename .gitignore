@@ -50,5 +50,5 @@
 !src/neurotd/app_ephys_gene/data/processed/
 !src/neurotd/app_ephys_gene/data/processed/cell_name_to_cell_id_and_sample_id.csv
 !src/neurotd/app_ephys_gene/data/processed/gxp_total_log2_filtered_pc.zip
-!src/neurotd/app_ephys_gene/data/processed/m1_patchseq_meta_data
+!src/neurotd/app_ephys_gene/data/processed/m1_patchseq_meta_data.csv
 !src/neurotd/app_ephys_gene/data/processed/time_delays_all_cells.csv
