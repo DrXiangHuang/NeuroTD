@@ -22,16 +22,33 @@
 !README.md
 !pyproject.toml
 !LICENSE.txt
+!CHANGELOG.md
 
 # ------------------------------------------------------
-# Allow NeuroTD source tree
+# Allow NeuroTD source tree.
+# NOTE: !src/neurotd/**/*.py didn't work to recursively include all .py in src/neurotd/,
+# Need explicitly allow a folder before allowing files/subfolder within it.
 # ------------------------------------------------------
 !src/
 !src/neurotd/
-!src/neurotd/**/*.py
+!src/neurotd/*.py
+!src/neurotd/app_ephys_gene/
+!src/neurotd/app_ephys_gene/*.py
+!src/neurotd/app_iEEG/
+!src/neurotd/app_iEEG/*.py
 
 # ------------------------------------------------------
 # Allow README figures
 # ------------------------------------------------------
 !src/neurotd/img/
 !src/neurotd/img/*.png
+
+# ------------------------------------------------------
+# Optional: Allow Data file if < 100MB
+# ------------------------------------------------------
+!src/neurotd/app_ephys_gene/data/
+!src/neurotd/app_ephys_gene/data/processed/
+!src/neurotd/app_ephys_gene/data/processed/cell_name_to_cell_id_and_sample_id.csv
+!src/neurotd/app_ephys_gene/data/processed/gxp_total_log2_filtered_pc.zip
+!src/neurotd/app_ephys_gene/data/processed/m1_patchseq_meta_data
+!src/neurotd/app_ephys_gene/data/processed/time_delays_all_cells.csv

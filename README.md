@@ -48,8 +48,9 @@ The discrete-delay simulation evaluates NeuroTD under controlled conditions wher
 Run the discrete-delay simulation:
 
 ```bash
-python fig2_simulation_discrete_shift.py
+python src/neurotd/fig2_simulation_discrete_shift.py
 ```
+The script may also be executed in interactive environments (e.g., VS Code or Jupyter), which manage figure display automatically.
 
 This script reproduces the results shown below:
 
@@ -66,10 +67,11 @@ The continuous-delay simulation evaluates NeuroTD under controlled conditions wh
 Run the continuous-delay simulation:
 
 ```bash
-python fig3_simulation_continuous_shift.py
+python src/neurotd/fig3_simulation_continuous_shift.py
 ```
+The script may also be executed in interactive environments (e.g., VS Code or Jupyter), which manage figure display automatically.
 
-This script generates a single combined figure with three panels:
+This script reproduces three figures shown below:
 
 - **(a)** simulated time-series data with corresponding ground-truth time-varying delays,
 - **(b)** estimated delay trajectories at a fixed noise level, comparing NeuroTD with baseline methods, and

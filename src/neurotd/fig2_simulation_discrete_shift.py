@@ -19,7 +19,7 @@ from scipy.stats import pearsonr, spearmanr
 from tqdm import tqdm
 
 from neurotd.rcParams import rcParams
-from neurotd.signal import SegmentedSignal, my_ricker
+from neurotd.neuro_signal import SegmentedSignal, my_ricker
 from neurotd.simulation_plotting import (
     colors,
     generate_table_full_latex,
@@ -42,8 +42,9 @@ from neurotd.time_varying_shift import (  # below are simulation specific, keep 
 )
 from neurotd.utils import InterpolatedVector, SlidingWindowPair, ensure_odd_window_size, rmse
 
-
 # %%
+plt.ion()  # enable interactive mode for command-line script execution (non-blocking figure display)
+
 def configure_plot():
     plt.rcParams["figure.figsize"] = [12, 8]
     plt.rcParams.update({"font.size": 18})
@@ -327,4 +328,5 @@ latex = generate_table_full_latex(
 print(latex)
 
 # --------------------End of paper figure and supplementary table generation-------------------- #
+plt.show(block=True)  # keep the figures open for scripts run outside of an interactive environment
 # %%

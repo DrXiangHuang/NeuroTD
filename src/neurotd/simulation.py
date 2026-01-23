@@ -11,7 +11,7 @@ from scipy.signal import butter, filtfilt
 from skimage.registration import phase_cross_correlation
 from tqdm import tqdm
 
-from neurotd.signal import my_ricker
+from neurotd.neuro_signal import my_ricker
 from neurotd.utils import circular_shift, create_sliding_window_view, rmse
 from neurotd.visualization import show_chirp
 
