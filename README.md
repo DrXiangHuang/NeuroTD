@@ -45,7 +45,7 @@ This process usually takes several minutes.
 
 The discrete-delay simulation evaluates NeuroTD under controlled conditions where the delay between two signals changes in a piecewise manner over time. Gaussian noise is added at multiple levels to assess robustness. NeuroTD is compared against Dynamic Time Warping (DTW), Canonical Time Warping (CTW), and FFT-based baselines using root-mean-square error (RMSE).
 
-Run the discrete-delay simulation:
+Run the discrete-delay simulation from the NeuroTD project directory:
 
 ```bash
 python src/neurotd/fig2_simulation_discrete_shift.py
@@ -64,7 +64,7 @@ This script reproduces the results shown below:
 
 The continuous-delay simulation evaluates NeuroTD under controlled conditions where the delay between two signals varies smoothly over time. This setting is designed to mimic gradual changes in neural timing. Gaussian noise is added at multiple levels to assess robustness. NeuroTD is evaluated by comparing estimated delay trajectories against known ground truth using root-mean-square error (RMSE).
 
-Run the continuous-delay simulation:
+Run the continuous-delay simulation from the NeuroTD project directory:
 
 ```bash
 python src/neurotd/fig3_simulation_continuous_shift.py
